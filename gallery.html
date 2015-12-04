@@ -3,6 +3,7 @@
 <head>
 	<title>RadicalPhoto Gallery</title>
 	<link href='http://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+	<link rel="stylesheet" href="css/lightbox.css">
 	<link type="text/css" rel="stylesheet" href="css/radicalphoto.css">
 </head>
 <body>
@@ -28,16 +29,16 @@
 
 	<div id="gallery">
 		<ul>
-			<li><a href="images/blue_dress.jpg"><img src="images/blue_dress_thumb.jpg"></a></li>
-			<li><a href="images/boxer.jpg"><img src="images/boxer_thumb.jpg"></a></li>
-			<li><a href="images/cow.jpg"><img src="images/cow_thumb.jpg"></a></li>
-			<li><a href="images/country_boy_relaxing.jpg"><img src="images/country_boy_relaxing_thumb.jpg"></a></li>
-			<li><a href="images/eye.jpg"><img src="images/eye_thumb.jpg"></a></li>
-			<li><a href="images/ice_swim.jpg"><img src="images/ice_swim_thumb.jpg"></a></li>
-			<li><a href="images/sitting.jpg"><img src="images/sitting_thumb.jpg"></a></li>
+			<li><a href="images/blue_dress.jpg" data-lightbox="lightboximgs"><img id="blue-dress" src="images/blue_dress_thumb.jpg" width="150" height="100" alt="blue dress"></a></li>
+			<li><a href="images/boxer.jpg" data-lightbox="lightboximgs"><img id="boxer" src="images/boxer_thumb.jpg" width="150" height="100" alt="boxer"></a></li>
+			<li><a href="images/sun.jpg" data-lightbox="lightboximgs"><img id="sun" src="images/sun_thumb.jpg" width="150" height="100" alt="sun"></a></li>
+			<li><a href="images/country_boy_relaxing.jpg" data-lightbox="lightboximgs"><img id="country-boy" src="images/country_boy_relaxing_thumb.jpg" width="150" height="100" alt="country boy"></a></li>
+			<li><a href="images/eye.jpg" data-lightbox="lightboximgs"><img id="eye" src="images/eye_thumb.jpg" width="150" height="100" alt="eye"></a></li>
+			<li><a href="images/ice_swim.jpg" data-lightbox="lightboximgs"><img id="ice-swim" src="images/ice_swim_thumb.jpg" width="150" height="100" alt="ice swimming"></a></li>
+            <li><a href="images/sitting.jpg" data-lightbox="lightboximgs"><img id="sitting" src="images/sitting_thumb.jpg" width="150" height="100" alt="sitting"></a></li>
 		</ul>
 
-		<p><img src="images/blue_dress.jpg" alt=""></p>
+		<p><img id="big-img" src="images/blue_dress.jpg" alt="big image"></p>
 
 	</div>
 
@@ -48,6 +49,9 @@
 	</div>
 
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/vendor/lightbox.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
