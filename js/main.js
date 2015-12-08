@@ -55,12 +55,12 @@ var email_error = $('#email_error');
 var message_error = $('#message_error');
 
 
-my_form.submit(function(e) {
+my_form.submit(function (ev) {
     
     var errors = 0;
-    var user_name = ('#username').val();
-    var user_email = ('#email').val();
-    var user_message = ('#my_message').val();
+    var user_name = $('#username').val();
+    var user_email = $('#email').val();
+    var user_message = $('#my_message').val();
     
     if (user_name == '') {
         the_name.css('border-color', '#C00');
@@ -98,10 +98,10 @@ my_form.submit(function(e) {
     
     // ------------------
     
-    if (errors>0) {
+    if (errors > 0) {
         errors_warning.show();
         errors_warning.css('color', '#C00');
-        e.preventDefault();
+        ev.preventDefault();
     } else {
         errors_warning.hide()
     }
